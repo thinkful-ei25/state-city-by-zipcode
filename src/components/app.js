@@ -17,7 +17,8 @@ export default class App extends React.Component {
       
   return (
     <div>
-      <h1>Find Out More About a Zipcode!</h1>
+      <h1>Explore California!</h1>
+      <p>Enter in a california zipcode and get back some handy information!</p>
       <ZipInput onSubmit={zipcode => this.setState({ zipcode })} />
       <InfoOutput zipInfo={zipInfo} />
     </div>
