@@ -14,8 +14,13 @@ export default class App extends React.Component {
   render() {
     const zipInfo = this.props.zipInfo.filter(
       place => place.zipcode === this.state.zipcode);
-  
-    }
-
-
+      
+  return (
+    <div>
+      <h1>Find Out More About a Zipcode!</h1>
+      <ZipInput onSubmit={zipcode => this.setState({ zipcode })} />
+      <InfoOutput zipInfo={zipInfo} />
+    </div>
+    );
+  }
 }
