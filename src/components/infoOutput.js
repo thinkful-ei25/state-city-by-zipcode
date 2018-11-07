@@ -1,8 +1,10 @@
 import React from 'react';
 
 export default function InfoOutput(props) {
-  let location = props.zipInfo[0];
-  if(props.localWeather[0]) {
+  let location = [];
+  console.log(props);
+  if(props.zipInfo[0]) {
+    location = props.zipInfo[0];
   return (
     <div>
       <p>Here is the information your request on zipcode: {location.Zipcode}</p>

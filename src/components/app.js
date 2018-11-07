@@ -13,7 +13,7 @@ export default class App extends React.Component {
 
   render() {
     const zipInfo = this.props.zipInfo.filter(
-      place => place.zipcode === this.state.zipcode);
+      place => place.Zipcode === this.state.zipcode);
       
   return (
     <div>
